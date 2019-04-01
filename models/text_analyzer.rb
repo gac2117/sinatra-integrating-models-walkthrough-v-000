@@ -6,12 +6,12 @@ class TextAnalyzer
     @text = text.downcase
   end
 
-  def count_of_words
+  def count_of_words(text)
     words = text.split(" ")
     words.count
   end
 
-  def count_of_vowels
+  def count_of_vowels(text)
     text.scan(/[aeoui]/).count
   end
 
