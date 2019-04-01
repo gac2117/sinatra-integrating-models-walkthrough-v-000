@@ -15,11 +15,11 @@ class TextAnalyzer
     text.scan(/[aeoui]/).count
   end
 
-  def count_of_consonants
+  def count_of_consonants(text)
     text.scan(/[bcdfghjklmnpqrstvwxyz]/).count
   end
 
-  def most_used_letter
+  def most_used_letter(text)
     s1 = text.gsub(/[^a-z]/, '') # gets rid of spaces
     arr = s1.split('')
     arr1 = arr.uniq
