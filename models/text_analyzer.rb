@@ -6,20 +6,20 @@ class TextAnalyzer
     @text = text.downcase
   end
 
-  def count_of_words(text)
+  def count_of_words
     words = text.split(" ")
     words.count
   end
 
-  def count_of_vowels(text)
+  def count_of_vowels
     text.scan(/[aeoui]/).count
   end
 
-  def count_of_consonants(text)
+  def count_of_consonants
     text.scan(/[bcdfghjklmnpqrstvwxyz]/).count
   end
 
-  def most_used_letter(text)
+  def most_used_letter
     s1 = text.gsub(/[^a-z]/, '') # gets rid of spaces
     arr = s1.split('')
     arr1 = arr.uniq
